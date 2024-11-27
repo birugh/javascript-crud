@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Layanan Perbaikan Kendaraan</h1>
-    <form autocomplete="off" onclick="onFormSubmit()">
+    <form autocomplete="off">
         <div>
             Plat Kendaraan Polisi <br>
             <input type="text" name="platKendaraan" id="platKendaraan" required>
@@ -42,8 +42,8 @@
             <input type="text" name="biaya" id="biaya" required> 
         </div>
         <div class="form_action--button">
-            <input type="submit" value="Simpan">
-            <input type="reset" value="Batal"> <br><br>
+            <button type="submit" value="simpan" onclick="onFormSubmit()">Submit</button>
+            <button type="reset" value="reset" onclick="resetForm()">Reset</button>
         </div>
     </form>
     <table border="1" class="list" id="storeList">
@@ -55,6 +55,7 @@
                 <th>Jenis Mobil</th>
                 <th>Kerusakan</th>
                 <th>Biaya</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
