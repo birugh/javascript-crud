@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD - Layanan Perbaikan Kendaraan</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    
+    <h1>Layanan Perbaikan Kendaraan</h1>
+    <form autocomplete="off" onclick="onSumbit()">
+        <div>
+            Plat Kendaraan Polisi
+            <input type="text" name="platKendaraan" id="platKendaraan" required>
+        </div>
+        <div>
+            Nama Pemilik
+            <input type="text" name="namaPemilik" id="namaPemilik" required>
+        </div>
+        <div>
+            Merk
+            <input type="text" name="merek" id="merek" required>
+        </div>
+        <div>
+            Jenis Mobil
+            <select name="kerusakaan" id="kerusakaan">
+                <option value="Truk">Truk</option>
+                <option value="Minibus">Minibus</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </div>
+        <div>
+            Kerusakan
+            <select name="kerusakaan" id="kerusakaan">
+                <option value="ringan">Kerusakan Ringan</option>
+                <option value="Sedang">Kerusakan Sedang</option>
+                <option value="Berat">Kerusakan Berat</option>
+            </select>
+        </div>
+        <div>
+            Biaya
+            <input type="text" name="biaya" id="biaya" required>
+        </div>
+    </form>
+    <table border="1" class="list" id="storeList">
+        <thead>
+            <tr>
+                <th>Plat Kendaraan</th>
+                <th>Nama Pemilik</th>
+                <th>Merek</th>
+                <th>Jenis Mobil</th>
+                <th>Kerusakan</th>
+                <th>Biaya</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script type="text/javascript" src=""></script>
 </body>
 </html>
