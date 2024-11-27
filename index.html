@@ -23,18 +23,18 @@
         </div>
         <div>
             Jenis Mobil <br>
-            <select name="kerusakaan" id="kerusakaan">
-                <option value="Truk">Truk</option>
-                <option value="Minibus">Minibus</option>
-                <option value="Bus">Bus</option>
+            <select name="jenisMobil" id="jenisMobil" onchange="calculateBiaya()">
+                <option value="1000000">Truk</option>
+                <option value="2000000">Minibus</option>
+                <option value="3000000">Bus</option>
             </select>
         </div>
         <div>
             Kerusakan <br>
-            <select name="kerusakaan" id="kerusakaan">
-                <option value="ringan">Kerusakan Ringan</option>
-                <option value="Sedang">Kerusakan Sedang</option>
-                <option value="Berat">Kerusakan Berat</option>
+            <select name="kerusakan" id="kerusakan" onchange="calculateBiaya()">
+                <option value="500000">Kerusakan Ringan</option>
+                <option value="1000000">Kerusakan Sedang</option>
+                <option value="2000000">Kerusakan Berat</option>
             </select>
         </div>
         <div>
@@ -46,7 +46,7 @@
             <button type="reset" value="reset" onclick="resetForm()">Reset</button>
         </div>
     </form>
-    <table border="1" class="list" id="storeList">
+    <table class="list" id="storeList">
         <thead>
             <tr>
                 <th>Plat Kendaraan</th>
