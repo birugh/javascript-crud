@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Layanan Perbaikan Kendaraan</h1>
-    <form autocomplete="off">
+    <form autocomplete="off" onclick="">
         <div>
             Plat Kendaraan Polisi <br>
             <input type="text" name="platKendaraan" id="platKendaraan" required>
@@ -23,7 +23,8 @@
         </div>
         <div>
             Jenis Mobil <br>
-            <select name="jenisMobil" id="jenisMobil" onchange="calculateBiaya()">
+            <select name="jenisMobil" id="jenisMobil" onchange="calculateBiaya()" required>
+                <option disabled selected value></option>
                 <option value="1000000">Truk</option>
                 <option value="2000000">Minibus</option>
                 <option value="3000000">Bus</option>
@@ -31,7 +32,8 @@
         </div>
         <div>
             Kerusakan <br>
-            <select name="kerusakan" id="kerusakan" onchange="calculateBiaya()">
+            <select name="kerusakan" id="kerusakan" onchange="calculateBiaya()" required>
+                <option disabled selected value></option>
                 <option value="500000">Kerusakan Ringan</option>
                 <option value="1000000">Kerusakan Sedang</option>
                 <option value="2000000">Kerusakan Berat</option>
