@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Layanan Perbaikan Kendaraan</h1>
-    <form autocomplete="off" onclick="">
+    <form autocomplete="off" onsubmit="onFormSubmit()">
         <div>
             Plat Kendaraan Polisi <br>
             <input type="text" name="platKendaraan" id="platKendaraan" required>
@@ -43,9 +43,9 @@
             Biaya <br>
             <input type="text" name="biaya" id="biaya" required> 
         </div>
-        <div class="form_action--button">
-            <button type="submit" value="simpan" onclick="onFormSubmit()">Submit</button>
-            <button type="reset" value="reset" onclick="resetForm()">Reset</button>
+        <div class="form_action--button" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </div>
     </form>
     <table class="list" id="storeList">
