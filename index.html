@@ -10,19 +10,19 @@
     <h1>Layanan Perbaikan Kendaraan</h1>
     <form autocomplete="off" onclick="onSumbit()">
         <div>
-            Plat Kendaraan Polisi
+            Plat Kendaraan Polisi <br>
             <input type="text" name="platKendaraan" id="platKendaraan" required>
         </div>
         <div>
-            Nama Pemilik
+            Nama Pemilik <br>
             <input type="text" name="namaPemilik" id="namaPemilik" required>
         </div>
         <div>
-            Merk
+            Merk <br>
             <input type="text" name="merek" id="merek" required>
         </div>
         <div>
-            Jenis Mobil
+            Jenis Mobil <br>
             <select name="kerusakaan" id="kerusakaan">
                 <option value="Truk">Truk</option>
                 <option value="Minibus">Minibus</option>
@@ -30,7 +30,7 @@
             </select>
         </div>
         <div>
-            Kerusakan
+            Kerusakan <br>
             <select name="kerusakaan" id="kerusakaan">
                 <option value="ringan">Kerusakan Ringan</option>
                 <option value="Sedang">Kerusakan Sedang</option>
@@ -38,8 +38,12 @@
             </select>
         </div>
         <div>
-            Biaya
-            <input type="text" name="biaya" id="biaya" required>
+            Biaya <br>
+            <input type="text" name="biaya" id="biaya" required> 
+        </div>
+        <div class="form_action--button">
+            <input type="submit" value="Simpan">
+            <input type="reset" value="Batal"> <br><br>
         </div>
     </form>
     <table border="1" class="list" id="storeList">
@@ -54,7 +58,7 @@
             </tr>
         </thead>
         <tbody>
-
+            
         </tbody>
     </table>
     <script type="text/javascript" src=""></script>
